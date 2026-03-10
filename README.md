@@ -1,45 +1,42 @@
 # 🎯 Dart OOP Fundamentals
 
-A midterm project for **Mobile App Development - 1** at **Bano Qabil 2.0**, guided by **Instructor Muhammad Salman Bediya**. This repository demonstrates core Object Oriented Programming principles in Dart through two practical implementations: a banking system and a student management tool.
+This repository demonstrates core Object-Oriented Programming (OOP) principles in Dart, developed as a midterm assessment for the **Mobile App Development - 1** course at **Bano Qabil 2.0** under the guidance of **Instructor Muhammad Salman Bediya**.
 
 ---
 
 ## 📝 Project Overview
 
-The project contains two practical implementations that showcase how **classes** and **objects** work in Dart. By building a **BankAccount** system and a **Student Information** system, it demonstrates handling data attributes, performing logical operations, and managing dynamic lists.
+The project features two distinct implementations designed to showcase class architecture, attribute management, and logic validation. By separating logic from execution, this repository follows industry-standard Dart project conventions.
 
 ---
 
 ## ✨ Features
 
-### **1. BankAccount Management System**
+### 1. BankAccount Management System
 - **Attributes:** `accountNumber`, `balance`, `accountType`, `interestRate`  
-- **Deposit:** Adds funds to the current balance.  
-- **Withdraw:** Subtracts funds while preventing overdrafts.  
-- **Calculate Interest:** Applies the interest rate to the balance.  
-- **Display Info:** Prints a detailed account summary.
+- **Logic:** Methods for deposits, interest calculation, and validated withdrawals (prevents overdrawing).  
+- **Display:** Generates a comprehensive summary of the account status.  
 
-### **2. Student Information System**
-- **Attributes:** `studentName`, `studentID`, `enrolledCourses` (List)  
-- **Add Course:** Appends a course to the student’s list.  
-- **Drop Course:** Removes a course from the enrollment list.  
-- **Display Info:** Shows student details and current course load.
+### 2. Student Information System
+- **Attributes:** `name`, `id`, `enrolledCourses` (List)  
+- **Logic:** Dynamic list manipulation to add or drop courses from the student record.  
+- **Display:** Prints the student's full academic profile and current enrollment.  
 
 ---
 
 ## 🛠️ Concepts Demonstrated
-
-- **Classes & Objects** — Creating blueprints and instantiating unique objects.  
-- **Encapsulation** — Grouping related data and methods within a single unit.  
-- **Logic & Validation** — Conditional checks to prevent invalid operations like overdrawing.  
-- **Collection Management** — Using Dart `List` to handle dynamic data sets.
+- **Encapsulation:** Protecting data by grouping attributes and methods within classes.  
+- **Logic Validation:** Conditional checks to ensure data integrity (e.g., balance validation).  
+- **Unit Testing:** Using the `test` package to verify code logic automatically.  
+- **Standard Project Layout:** Organizing code into `bin/`, `lib/`, and `test/` directories.  
 
 ---
 
 ## 📁 Project Structure
-
-- **`main.dart`** — Entry point containing class definitions and test logic.  
-- **`README.md`** — Project documentation and overview.
+- **`bin/main.dart`** — Executable entry point of the application.  
+- **`lib/`** — Core logic and class definitions (`bank_account.dart`, `student.dart`).  
+- **`test/`** — Automated unit tests to verify OOP logic.  
+- **`pubspec.yaml`** — Project metadata and dependencies (e.g., `test` package).  
 
 ---
 
@@ -49,33 +46,26 @@ The project contains two practical implementations that showcase how **classes**
 
 ```bash
 # Clone the repository
-git clone https://github.com/SHADOWRULIN/dart-oop-fundamentals.git
+git clone https://github.com/SHADOWRULIN/Dart-OOP-Fundamentals.git
 
 # Navigate to the project directory
-cd dart-oop-fundamentals
+cd Dart-OOP-Fundamentals
 
-# Run the app
-dart run main.dart
+# Run the application
+dart run bin/main.dart
+
+# Run the tests
+dart test
 ```
 
 ---
 
-## 💻 Technologies Used
-
-- **Language:** Dart  
-- **Environment:** Dart SDK  
-- **Tools:** VS Code, Windows Terminal
-
----
-
 ## 👤 Author
-
 **Muhammad Fahaz Khan**  
 - **GitHub:** [@SHADOWRULIN](https://github.com/SHADOWRULIN)  
-- **LinkedIn:** Muhammad Fahaz Khan
+- LinkedIn: Fahaz Khan  
 
 ---
 
-## License
-
-This project is provided as a course assignment. Feel free to reuse and adapt the code for learning purposes.
+## 📄 License
+This project is licensed under the **MIT License** — see the LICENSE file for details.

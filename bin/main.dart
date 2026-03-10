@@ -1,5 +1,5 @@
-import 'bank_account.dart';
-import 'student.dart';
+import 'package:dart_oop_fundamentals/bank_account.dart';
+import 'package:dart_oop_fundamentals/student.dart';
 
 void main() {
   //  First instance of the "BankAccount" class.
